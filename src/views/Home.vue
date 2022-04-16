@@ -1,6 +1,6 @@
 <template>
   <main>
-    <img class="profile" src="../assets/profile.jpg" alt="logo" />
+    <img class="profile" src="../assets/Profile.jpg" alt="logo" />
     <h1 id="welcome">Hi, I'm <span>M.Mukunthan</span></h1>
     <h4>
       A passionate Full Stack Web Developer and Cyber Security having an
