@@ -29,32 +29,83 @@
     <div class="flex"></div>
 
     <div class="menu">
-      <a href="https://t.me/MukunthanMass" class="button">
+      <a
+        v-on:click="
+          {
+            {
+              Telegram();
+            }
+          }
+        "
+        class="button"
+      >
         <span class="material-icons"><img src="../assets/telegram.svg" /></span>
         <span class="text">Telegram</span>
       </a>
-      <a href="https://wa.me/+919629175812" class="button">
+      <a
+        v-on:click="
+          {
+            {
+              Whatsapp();
+            }
+          }
+        "
+        class="button"
+      >
         <span class="material-icons"><img src="../assets/whatsapp.svg" /></span>
         <span class="text">Whatsapp</span>
       </a>
       <a
-        href="https://www.linkedin.com/in/m-mukunthan-577bb31a0/"
+        v-on:click="
+          {
+            {
+              Linkedin();
+            }
+          }
+        "
         class="button"
       >
         <span class="material-icons"><img src="../assets/linkedin.svg" /></span>
         <span class="text">Linkedin</span>
       </a>
-      <a href="https://www.instagram.com/mukunthan7_official/" class="button">
+      <a
+        v-on:click="
+          {
+            {
+              Instagram();
+            }
+          }
+        "
+        class="button"
+      >
         <span class="material-icons"
           ><img src="../assets/instagram.svg"
         /></span>
         <span class="text">Instagram</span>
       </a>
-      <a href="https://www.facebook.com/mukunthanvisvakarma" class="button">
+      <a
+        v-on:click="
+          {
+            {
+              Facebook();
+            }
+          }
+        "
+        class="button"
+      >
         <span class="material-icons"><img src="../assets/facebook.svg" /></span>
         <span class="text">Facebook</span>
       </a>
-      <a href="https://github.com/mukunthan7" class="button">
+      <a
+        v-on:click="
+          {
+            {
+              Github();
+            }
+          }
+        "
+        class="button"
+      >
         <span class="material-icons"><img src="../assets/github.svg" /></span>
         <span class="text">Github</span>
       </a>
@@ -68,6 +119,32 @@ const is_expanded = ref(localStorage.getItem("is_expanded") === "true");
 const ToggleMenu = () => {
   is_expanded.value = !is_expanded.value;
   localStorage.setItem("is_expanded", is_expanded.value);
+};
+</script>
+
+//
+<script>
+export default {
+  methods: {
+    Github() {
+      window.open("https://github.com/mukunthan7");
+    },
+    Whatsapp() {
+      window.open("https://wa.me/+919629175812");
+    },
+    Linkedin() {
+      window.open("https://www.linkedin.com/in/m-mukunthan-577bb31a0/");
+    },
+    Instagram() {
+      window.open("https://www.instagram.com/mukunthan7_official/");
+    },
+    Facebook() {
+      window.open("https://www.facebook.com/mukunthanvisvakarma");
+    },
+    Telegram() {
+      window.open("https://t.me/MukunthanMass");
+    },
+  },
 };
 </script>
 

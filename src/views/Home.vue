@@ -63,8 +63,26 @@ main {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 5px solid #8e45ac;
+  border: 8px solid #8e45ac;
   margin: 20px;
+  animation: profile 2s ease-in-out infinite;
+}
+@keyframes profile {
+  0% {
+    border: 8px solid #8e45ac;
+  }
+  25% {
+    border: 8px solid yellow;
+  }
+  50% {
+    border: 8px solid yellowgreen;
+  }
+  75% {
+    border: 8px solid palegoldenrod;
+  }
+  100% {
+    border: 8px solid #8e45ac;
+  }
 }
 h1 {
   color: #ffc107;
@@ -99,7 +117,25 @@ h4 {
   margin-bottom: 10px;
   border-radius: 5px;
   transition: 0.5s ease-in-out;
-  border: 3px solid #ffc107;
+  animation: button 2s ease-in-out infinite;
+  border: 5px solid #ffc107;
+}
+@keyframes button {
+  0% {
+    border: 6px solid #8e45ac;
+  }
+  25% {
+    border: 6px solid yellow;
+  }
+  50% {
+    border: 6px solid yellowgreen;
+  }
+  75% {
+    border: 6px solid palegoldenrod;
+  }
+  100% {
+    border: 6px solid #8e45ac;
+  }
 }
 .topContent_git:hover {
   background-color: white;
@@ -112,7 +148,7 @@ h4 {
 .topContent_pro {
   text-decoration: none;
   color: #ffc107;
-  border: 3px solid #ffc107;
+  border: 5px solid #ffc107;
   background-color: transparent;
   font-size: 14px;
   font-family: "Indie Flower", cursive;
@@ -120,6 +156,7 @@ h4 {
   font-weight: bold;
   border-radius: 5px;
   transition: 0.5s ease-in-out;
+  animation: button 2s ease-in-out infinite;
 }
 .topContent_pro:hover {
   background-color: white;
